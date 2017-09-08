@@ -17,4 +17,14 @@ public abstract class Fish extends Animal {
         super(name);
         this.isSaltWater = isSaltWater;
     }
+
+    public boolean isIsSaltWater() {
+        return isSaltWater;
+    }
+
+    public void setIsSaltWater(boolean isSaltWater) {
+        this.isSaltWater = isSaltWater;
+    }
+    
+    
 }

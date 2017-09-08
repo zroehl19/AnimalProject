@@ -17,4 +17,17 @@ public abstract class Mammal extends Animal {
         super(name);
         this.bodyTemp = bodyTemp;
     }
+
+    public int getBodyTemp() {
+        return bodyTemp;
+    }
+
+    public void setBodyTemp(int bodyTemp) {
+        this.bodyTemp = bodyTemp;
+    }
+
+    @Override
+    public String toString() {
+        return getName() + " has a wing span of " + getBodyTemp();
+    }
 }
