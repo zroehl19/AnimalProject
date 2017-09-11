@@ -9,8 +9,8 @@ package animalproject;
  *
  * @author zroehl
  */
-public class Lion extends Mammal implements IWalk{
-    public Lion(String name, int bodyTemp)
+public class Lion extends Mammal implements IWalk, IMakeSound{
+    public Lion(String name, double bodyTemp)
     {
         super(name,bodyTemp);
     }
@@ -28,5 +28,10 @@ public class Lion extends Mammal implements IWalk{
     @Override
     public void Walk() {
         System.out.println("I Walk");
+    }
+
+    @Override
+    public void MakeSound() {
+        System.out.println("Rhoooooor");
     }
 }

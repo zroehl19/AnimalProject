@@ -9,7 +9,7 @@ package animalproject;
  *
  * @author zroehl
  */
-public class Bass extends Fish implements ISwim{
+public class Bass extends Fish implements ISwim, IMakeSound{
     public Bass(String name, boolean isSaltWater)
     {
         super(name, isSaltWater);
@@ -40,5 +40,10 @@ public class Bass extends Fish implements ISwim{
     @Override
     public void Swim() {
         System.out.println("I swim");
+    }
+
+    @Override
+    public void MakeSound() {
+        System.out.println("Bluub");
     }
 }

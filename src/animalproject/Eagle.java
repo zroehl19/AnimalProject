@@ -9,8 +9,8 @@ package animalproject;
  *
  * @author zroehl
  */
-public class Eagle extends Bird implements IFly, IWalk{
-    public Eagle(String name, int wingSpan)
+public class Eagle extends Bird implements IFly, IWalk, IMakeSound{
+    public Eagle(String name, double wingSpan)
     {
         super(name,wingSpan);
     }
@@ -33,5 +33,10 @@ public class Eagle extends Bird implements IFly, IWalk{
     @Override
     public void Walk() {
         System.out.println("I Walk");
+    }
+
+    @Override
+    public void MakeSound() {
+        System.out.println("Screeech");
     }
 }

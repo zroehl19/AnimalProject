@@ -9,8 +9,8 @@ package animalproject;
  *
  * @author zroehl
  */
-public class Bat extends Mammal implements IWalk, IFly{
-    public Bat(String name, int bodyTemp)
+public class Bat extends Mammal implements IWalk, IFly, IMakeSound{
+    public Bat(String name, double bodyTemp)
     {
         super(name, bodyTemp);
     }
@@ -33,5 +33,10 @@ public class Bat extends Mammal implements IWalk, IFly{
     @Override
     public void Walk() {
         System.out.println("I Walk");
+    }
+
+    @Override
+    public void MakeSound() {
+        System.out.println("click-ick-ick-ick");
     }
 }

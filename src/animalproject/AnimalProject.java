@@ -15,7 +15,8 @@ public class AnimalProject {
      * @param args the command line arguments
      */
     public static void main(String[] args) {
-        // TODO code application logic here
+        Ostrich ostrich = new Ostrich("Tim",6.6);
+        
     }
     
 }

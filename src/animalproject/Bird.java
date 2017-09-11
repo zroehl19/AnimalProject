@@ -10,19 +10,19 @@ package animalproject;
  * @author zroehl
  */
 public abstract class Bird extends Animal{
-    int wingSpan;
+    double wingSpan;
     
-    public Bird(String name, int wingSpan)
+    public Bird(String name, double wingSpan)
     {
         super(name);
         this.wingSpan = wingSpan;
     }
 
-    public int getWingSpan() {
+    public double getWingSpan() {
         return wingSpan;
     }
 
-    public void setWingSpan(int wingSpan) {
+    public void setWingSpan(double wingSpan) {
         this.wingSpan = wingSpan;
     }
     

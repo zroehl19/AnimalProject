@@ -10,7 +10,7 @@ package animalproject;
  * @author zroehl
  */
 public class Ostrich extends Bird implements IWalk, ISwim, IMakeSound{
-    public Ostrich(String name, int wingSpan)
+    public Ostrich(String name, double wingSpan)
     {
         super(name,wingSpan);
     }
