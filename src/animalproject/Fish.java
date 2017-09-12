@@ -25,6 +25,18 @@ public abstract class Fish extends Animal {
     public void setIsSaltWater(boolean isSaltWater) {
         this.isSaltWater = isSaltWater;
     }
+
+    @Override
+    public String toString() {
+        if(isSaltWater == true)
+        {
+            return name + " is a salt water fish";
+        }
+        else
+        {
+            return name + " is not a salt water fish";
+        }
+    }
     
     
 }

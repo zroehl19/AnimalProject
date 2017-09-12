@@ -25,6 +25,11 @@ public abstract class Bird extends Animal{
     public void setWingSpan(double wingSpan) {
         this.wingSpan = wingSpan;
     }
+
+    @Override
+    public String toString() {
+        return name + " has a wingspan of " + wingSpan;//To change body of generated methods, choose Tools | Templates.
+    }
     
     
 }
