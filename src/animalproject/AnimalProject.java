@@ -79,13 +79,39 @@ public class AnimalProject {
         //SoundMakers
         ArrayList<IMakeSound> soundMakers = new ArrayList<>();
             soundMakers.add(ag);
+            soundMakers.add(tim);
+            soundMakers.add(aiden);
+            soundMakers.add(tyler);
+            soundMakers.add(israel);
+            soundMakers.add(mrG);
+            soundMakers.add(blake);
+            soundMakers.add(john);
+            soundMakers.add(anthony);
             
         for(Animal all: animals)
         {
             System.out.println(all.getName());
         }
         
+        for(Bird birds: bird)
+        {
+            System.out.println(birds.toString());
+        }
         
+        for(Mammal mammal: mammals)
+        {
+            System.out.println(mammal.toString());
+        }
+        
+        for(Fish fishes: fish)
+        {
+            System.out.println(fishes.toString());
+        }
+        
+        for(IFly fly: flyers)
+        {
+            fly.Fly();
+        }
     }
     
 }

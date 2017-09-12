@@ -15,24 +15,14 @@ public class Eagle extends Bird implements IFly, IWalk, IMakeSound{
         super(name,wingSpan);
     }
     
-    public void Name()
-    {
-        System.out.println("Name: "+name);
-    }
-    
-    public void WingSpan()
-    {
-        System.out.println("WingSpan: "+wingSpan);
-    }
-    
     @Override
     public void Fly() {
-        System.out.println("I fly.");
+        System.out.println(name + " flies.");
     }
 
     @Override
     public void Walk() {
-        System.out.println("I Walk");
+        System.out.println(name + " Walks");
     }
 
     @Override

@@ -15,19 +15,9 @@ public class Dolphin extends Mammal implements ISwim, IMakeSound{
         super(name,bodyTemp);
     }
     
-    public void Name()
-    {
-        System.out.println("Name: "+name);
-    }
-    
-    public void BodyTemp()
-    {
-        System.out.println("Body Temperature: "+bodyTemp);
-    }
-    
     @Override
     public void Swim() {
-        System.out.println("I swim");
+        System.out.println(name + " swims");
     }
 
     @Override

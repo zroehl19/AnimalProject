@@ -14,25 +14,15 @@ public class Penguin extends Bird implements IWalk, ISwim, IMakeSound{
     {
         super(name,wingSpan);
     }
-    
-    public void Name()
-    {
-        System.out.println("Name: "+name);
-    }
-    
-    public void WingSpan()
-    {
-        System.out.println("WingSpan: "+wingSpan);
-    }
 
     @Override
     public void Walk() {
-        System.out.println("I Walk");
+        System.out.println(name + " Walks");
     }
     
     @Override
     public void Swim() {
-        System.out.println("I swim");
+        System.out.println(name + " swims");
     }
 
     @Override

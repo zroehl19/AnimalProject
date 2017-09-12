@@ -40,12 +40,12 @@ public class FlyingFish extends Fish implements IFly, ISwim, IMakeSound{
     
     @Override
     public void Fly() {
-        System.out.println("I fly.");
+        System.out.println(name + " flies.");
     }
 
     @Override
     public void Swim() {
-        System.out.println("I swim");
+        System.out.println(name + " swims");
     }
 
     @Override

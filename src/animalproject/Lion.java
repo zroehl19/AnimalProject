@@ -14,20 +14,10 @@ public class Lion extends Mammal implements IWalk, IMakeSound{
     {
         super(name,bodyTemp);
     }
-    
-    public void Name()
-    {
-        System.out.println("Name: "+name);
-    }
-    
-    public void BodyTemp()
-    {
-        System.out.println("Body Temperature: "+bodyTemp);
-    }
 
     @Override
     public void Walk() {
-        System.out.println("I Walk");
+        System.out.println(name + " Walks");
     }
 
     @Override
