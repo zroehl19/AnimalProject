@@ -88,29 +88,74 @@ public class AnimalProject {
             soundMakers.add(john);
             soundMakers.add(anthony);
             
+        //Animals
+        System.out.println("All Animals");
         for(Animal all: animals)
         {
             System.out.println(all.getName());
         }
         
+        System.out.println("-------------------------------------------------");
+        
+        //birds
+        System.out.println("Only birds");
         for(Bird birds: bird)
         {
             System.out.println(birds.toString());
         }
         
+        System.out.println("-------------------------------------------------");
+        
+        //mammals
+        System.out.println("Only mammals");
         for(Mammal mammal: mammals)
         {
             System.out.println(mammal.toString());
         }
         
+        System.out.println("-------------------------------------------------");
+        
+        //fish
+        System.out.println("Only fish");
         for(Fish fishes: fish)
         {
             System.out.println(fishes.toString());
         }
         
+        System.out.println("-------------------------------------------------");
+        
+        //flyers
+        System.out.println("Animals that fly");
         for(IFly fly: flyers)
         {
             fly.Fly();
+        }
+        
+        System.out.println("-------------------------------------------------");
+        
+        //walkers
+        System.out.println("Animals that walk");
+        for(IWalk walk: walkers)
+        {
+            walk.Walk();
+        }
+        
+        System.out.println("-------------------------------------------------");
+        
+        //swimmers
+        System.out.println("Animals that swim");
+        for(ISwim swim: swimmers)
+        {
+            swim.Swim();
+        }
+        
+        System.out.println("-------------------------------------------------");
+        
+        //sound makers
+        System.out.println("Animals that make sound");
+        for(IMakeSound sound: soundMakers)
+        {
+            sound.MakeSound();
         }
     }
     
